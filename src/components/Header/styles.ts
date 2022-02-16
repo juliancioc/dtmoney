@@ -13,13 +13,11 @@ export const Content = styled.header`
   justify-content: space-between;
 
   button {
-    font-size: 1rem;
     color: #fff;
-    background: var(--blue-light);
+    background: var(--blue);
     border: 0;
-    padding: 0 2rem;
-    border-radius: 0.25rem;
-    height: 3rem;
+    border-radius: 50%;
+    height: 2rem;
 
     transition: filter 0.2s ease-in-out;
 

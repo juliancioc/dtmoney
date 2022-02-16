@@ -36,6 +36,24 @@ export function TransactionProvider({ children }: TransactionsProviderProps) {
   const [transactions, setTransactions] = useState<TransactionProps[]>([])
 
   useEffect(() => {
+    setTransactions([
+      {
+        id: 1,
+        title: "Mensalidade academia",
+        type: "withdraw",
+        category: "Saúde",
+        amount: 119,
+        createdAt: "2022-02-13 22:56",
+      },
+      {
+        id: 2,
+        title: "Salário",
+        type: "deposit",
+        category: "Trabalho",
+        amount: 32000,
+        createdAt: "2022-02-12 22:56",
+      },
+    ])
     api
       .get("transitions")
       .then((response) => setTransactions(response.data.transactions))

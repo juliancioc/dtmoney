@@ -1,3 +1,5 @@
+import { IoMdAddCircle } from "react-icons/io"
+
 import logoImg from "assets/logo.svg"
 import * as S from "./styles"
 
@@ -11,7 +13,7 @@ export function Header({ onOpenNewTransactionModal }: Props) {
       <S.Content>
         <img src={logoImg} alt="logo dt money" />
         <button onClick={onOpenNewTransactionModal} type="button">
-          Nova transação
+          <IoMdAddCircle size="large" />
         </button>
       </S.Content>
     </S.Container>
